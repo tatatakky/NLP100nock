@@ -3,9 +3,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def CharString(time,temp,degree):
+def Connection(time,temp,degree):
     return  "{}時の{}は{}".format(time,temp,degree)
 x=12
 y="気温"
 z=22.4
-print(CharString(x,y,z))
+print(Connection(x,y,z))
