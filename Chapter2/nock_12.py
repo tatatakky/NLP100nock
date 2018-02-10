@@ -1,5 +1,6 @@
 # 各行の1列目だけを抜き出したものをcol1.txtに，2列目だけを抜き出したものをcol2.txtとしてファイルに保存せよ
-# 確認にはcutコマンドを用いよ．ex) cut -f 1 hightemp.txt (hightemp.txtの１列目を表示。)
+# 確認にはcutコマンドを用いよ．
+# cut -f 1 hightemp.txt (hightemp.txtの１列目を表示。)
 
 #!usr/bin/env python
 # -*- coding:utf-8 -*-
