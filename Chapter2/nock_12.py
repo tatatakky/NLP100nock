@@ -1,5 +1,5 @@
 # 各行の1列目だけを抜き出したものをcol1.txtに，2列目だけを抜き出したものをcol2.txtとしてファイルに保存せよ
-# 確認にはcutコマンドを用いよ．
+# 確認にはcutコマンドを用いよ．ex) cut -f 1 hightemp.txt (hightemp.txtの１列目を表示。)
 fout1=open('col1.txt','w')
 fout2=open('col2.txt','w')
 for line in open('hightemp.txt','r'):
