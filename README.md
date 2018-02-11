@@ -1,4 +1,3 @@
 ## 言語処理100本ノック
 
-This is the first list item.
-This is the second list item.
+"言語処理100本ノック" is very suitable for people to learn NLP(Natural Language Processing). You can enjoy and learn lots of technique for NLP through this study.
