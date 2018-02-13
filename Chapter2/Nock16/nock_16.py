@@ -4,7 +4,7 @@
 
 # usr/bin/env python
 #-*- coding:utf-8 -*-
-import sys,os
+import sys
 def Judge_Remainder(divided,divisor):
     remainder=divided%divisor
     quotient=int(divided/divisor)
