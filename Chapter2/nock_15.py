@@ -4,9 +4,10 @@
 #!usr/bin/env python
 # -*- coding:utf-8 -*-
 import sys
+N=sys.argv[1]
 assert len(sys.argv) is 2,"[usage]: python nock_14.py N"
 lines = [line for line in open("hightemp.txt","r")]
-print(''.join(lines[-int(sys.argv[1]):]),end="")
+print(''.join(lines[-int(N):]),end="")
 
 # with open("hightemp.txt") as f:
 #     print("".join(f.readlines()[-int(sys.argv[1]):]), end="")
