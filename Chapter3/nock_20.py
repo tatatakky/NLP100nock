@@ -3,10 +3,5 @@
 
 # usr/bin/env python
 #-*- coding:utf-8 -*-
-
-import gzip,json
-for line in gzip.open('jawiki-country.json.gz','rt'):
-    country = json.loads(line)
-    if country['title'] == 'イギリス':
-        print(country['text'])
-        break
+from extraction_country import Extraction
+print(Extraction("イギリス"))
