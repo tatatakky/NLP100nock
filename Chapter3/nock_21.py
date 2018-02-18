@@ -5,4 +5,7 @@
 
 from extraction_country import Extraction
 lines=Extraction("イギリス").split('\n')
-print(lines)
+# li=[line for line in lines if "Category" in line]
+for line in lines:
+    if "Category" in line:
+        print(line)
