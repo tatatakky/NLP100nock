@@ -5,3 +5,14 @@
 # usr/bin/env python
 # -*- coding:utf-8 -*-
 import MeCab
+
+def parse():
+    with open('neko.txt','r') as fdata, open('neko.txt.mecab','w') as output:
+        mecab=MeCab.Tagger()
+        readfile=fdata.read()
+        output.write(mecab.parse(readfile))
+
+def MappingLines():
+    
+
+parse()
