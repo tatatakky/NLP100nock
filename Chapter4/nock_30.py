@@ -13,6 +13,20 @@ def parse():
         output.write(mecab.parse(readfile))
 
 def MappingLines():
-    
+    with open('neko.txt.mecab','r') as mecabfile:
+        morphemes=[]
+        for line in mecabfile:
+            cols=line.split('\t')
+            if len(cols) < 2:
+                raise StopIteration
+            info=cols[1].split(',') #info = ['名詞','代名詞'...'ワガハイ']
+            #辞書リスト
+            morpheme={'surface':cols[0],'base':info[6],'pos':info[0],'pos1':info[1]}
+            morphemes.append(morpheme)
+            if info[1] == '句点':
+                yield morphemes
+                morphemes=[]
 
 parse()
+for line in MappingLines():
+    print(line)
