@@ -18,10 +18,7 @@ with open('./rt-polaritydata/rt-polarity.neg',encoding='utf-8',errors='ignore') 
 
 concatenat = pos_list + neg_list
 
-random.shuffle(concatenat)
-print(concatenat[:10])
-
-pos_num=0
-neg_num=0
-
 print("pos:{},neg:{}".format(len(pos_list),len(neg_list)))
+
+# random.shuffle(concatenat)
+# print(concatenat[:10])
